@@ -11,7 +11,12 @@ import { MoonIcon, SunIcon } from "lucide-react";
 
 export function ColorModeProvider(props: ThemeProviderProps) {
   return (
-    <ThemeProvider attribute="class" disableTransitionOnChange {...props} />
+    <ThemeProvider
+      attribute="class"
+      disableTransitionOnChange
+      {...props}
+      forcedTheme="light"
+    />
   );
 }
 
